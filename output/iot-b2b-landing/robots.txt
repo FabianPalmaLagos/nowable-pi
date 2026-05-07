@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iot-b2b-landing.demo/suscripcion/sitemap.xml
