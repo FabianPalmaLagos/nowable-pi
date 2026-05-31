@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "role": "nowable.scout",
+  "purpose": "Maps context read-only and returns compact evidence.",
+  "boundaries": [
+    "No external writes without explicit approval",
+    "Do not infer publication state from outputs folders"
+  ],
+  "stable_notes": []
+}

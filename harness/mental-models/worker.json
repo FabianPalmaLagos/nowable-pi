@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "role": "nowable.worker",
+  "purpose": "Single writer for approved contracts.",
+  "boundaries": [
+    "No external writes without explicit approval",
+    "Do not infer publication state from outputs folders"
+  ],
+  "stable_notes": []
+}

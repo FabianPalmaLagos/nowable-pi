@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "profiles": {
+    "smoke": [
+      "publication-fixture"
+    ]
+  },
+  "cases": [
+    {
+      "id": "publication-fixture",
+      "fixture": "harness/fixtures/nowable-cloudflare-publication.fixture.json",
+      "expected_latest": "v3",
+      "expected_approved": "v2",
+      "local_outputs_allowed": false
+    }
+  ]
+}

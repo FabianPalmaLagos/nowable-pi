@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "type": "nowable-publication-metadata",
+  "id": "nowable-publication-fixture-001",
+  "prospect_reference": {
+    "rapigrowth_prospect_id": "prospect-nowable-fixture-001",
+    "company_name": "Fixture Prospect SpA",
+    "external_record_uri": "fixture://rapigrowth/prospect-nowable-fixture-001",
+    "source": "fixture"
+  },
+  "publication_metadata_path": {
+    "source_of_truth": "fixture",
+    "import_mode": "fixture",
+    "import_status": "approved",
+    "owner": "Nowable",
+    "reviewer": "Nowable QA Fixture",
+    "source_uri": "fixture://nowable/publication-metadata/fixture-001.json",
+    "external_writes_allowed": false,
+    "notes": [
+      "fixture only; no Cloudflare or Nowable writes"
+    ]
+  },
+  "retrieval_policy": {
+    "mode": "latest_and_approved",
+    "local_outputs_allowed": false,
+    "evaluation_timestamp": "2026-05-31T12:00:00Z",
+    "latest_rule": "highest version_sequence among non-archived records",
+    "approved_rule": "newest state=approved and approval_status=approved record with ttl_expiry after evaluation timestamp",
+    "unknown_behavior": "return unknown; do not inspect outputs folders",
+    "notes": [
+      "latest and approved are resolved from this metadata record"
+    ]
+  },
+  "landing_versions": [
+    {
+      "prospect": "prospect-nowable-fixture-001",
+      "landing_identifier": "landing-001",
+      "version": "v1",
+      "version_sequence": 1,
+      "cloudflare_url": "https://fixture.example.com/landing-001-v1",
+      "deployment_timestamp": "2026-05-01T10:00:00Z",
+      "ttl_expiry": "2026-05-10T10:00:00Z",
+      "state": "expired",
+      "approval_status": "approved",
+      "metadata_source": {
+        "source_uri": "fixture://nowable/landing-001/v1.json",
+        "source_of_truth": "fixture",
+        "import_mode": "fixture"
+      }
+    },
+    {
+      "prospect": "prospect-nowable-fixture-001",
+      "landing_identifier": "landing-001",
+      "version": "v2",
+      "version_sequence": 2,
+      "cloudflare_url": "https://fixture.example.com/landing-001-v2",
+      "deployment_timestamp": "2026-05-11T10:00:00Z",
+      "ttl_expiry": "2026-06-15T10:00:00Z",
+      "state": "approved",
+      "approval_status": "approved",
+      "metadata_source": {
+        "source_uri": "fixture://nowable/landing-001/v2.json",
+        "source_of_truth": "fixture",
+        "import_mode": "fixture"
+      }
+    },
+    {
+      "prospect": "prospect-nowable-fixture-001",
+      "landing_identifier": "landing-001",
+      "version": "v3",
+      "version_sequence": 3,
+      "cloudflare_url": "https://fixture.example.com/landing-001-v3",
+      "deployment_timestamp": "2026-05-31T11:00:00Z",
+      "ttl_expiry": "2026-06-30T11:00:00Z",
+      "state": "published",
+      "approval_status": "pending",
+      "metadata_source": {
+        "source_uri": "fixture://nowable/landing-001/v3.json",
+        "source_of_truth": "fixture",
+        "import_mode": "fixture"
+      }
+    }
+  ],
+  "review": {
+    "review_status": "draft",
+    "confidence": "high",
+    "human_review_required": true,
+    "notes": [
+      "fixture proves latest v3 differs from approved v2"
+    ]
+  }
+}

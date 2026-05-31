@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "role": "nowable.planning-lead",
+  "purpose": "Produces closed worker contracts and validation claims.",
+  "boundaries": [
+    "No external writes without explicit approval",
+    "Do not infer publication state from outputs folders"
+  ],
+  "stable_notes": []
+}

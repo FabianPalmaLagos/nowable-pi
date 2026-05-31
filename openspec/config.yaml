@@ -1,0 +1,3 @@
+version: 1
+changesDir: openspec/changes
+specsDir: openspec/specs
